@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+			}
+			.nav ul {
+				display: flex;
+				list-style-type: none;
+				background-color: rgb(26, 26, 26);
+				justify-content: flex-start;
+				height: 50px;
+				padding: 0 0;
+			}
+			ul li {
+				/* background-color: rgb(26, 26, 26); */
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100px;
+				color: aliceblue;
+			}
+			ul li:hover {
+				background-color: rgb(204, 204, 204);
+				color: rgb(39, 35, 35);
+			}
+			.main img {
+				margin: 0 0;
+			}
+			.members {
+				padding: 20px 0;
+				background-color: rgb(54, 53, 53);
+				margin: -5px 0;
+				color: azure;
+			}
+
+			.members .account {
+				display: flex;
+				justify-content: space-evenly;
+				padding: 20px 0;
+			}
+			.title h2 {
+				text-align: center;
+			}
+			.account .user {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.user span {
+				padding: 10px 0;
+			}
+			@media (min-width: 401px) and (max-width: 600px) {
+				.nav ul {
+					display: flex;
+					flex-direction: column;
+					height: 300px;
+					align-items: center;
+				}
+				ul li {
+					display: flex;
+					flex-direction: column;
+				}
+				.members .account {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					padding: 20px 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar">
+				<div class="nav">
+					<ul>
+						<li>Home</li>
+						<li>Band</li>
+						<li>Tour</li>
+						<li>Contact</li>
+						<li>Merch</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<img src="img/img_la.jpg" alt="bgImg" width="100%" />
+				<div class="members">
+					<div class="title">
+						<h2>Band Member</h2>
+					</div>
+					<div class="account">
+						<div class="user">
+							<img src="img/img_bandmember.jpg" alt="user1" />
+							<span>User1</span>
+						</div>
+						<div class="user">
+							<img src="img/img_bandmember.jpg" alt="user2" />
+							<span>User2</span>
+						</div>
+						<div class="user">
+							<img src="img/img_bandmember.jpg" alt="user3" />
+							<span>User3</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

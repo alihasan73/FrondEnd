@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Navbar</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				/* font-family: Arial, Helvetica, sans-serif; */
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				/* font-size: 32px; */
+			}
+			.navbar {
+				/* height: 100px; */
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				/* border: 1px solid gainsboro; */
+			}
+			.navbar .top {
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				background-color: rgb(247, 247, 247);
+				border-bottom: 1px solid rgb(205, 203, 203);
+			}
+			.top ul {
+				display: flex;
+				align-items: center;
+				color: rgb(71, 71, 71);
+				justify-content: flex-start;
+				width: 1150px;
+				height: 40px;
+				font-weight: lighter;
+			}
+			.top ul li {
+				list-style-type: none;
+				padding: 0 10px;
+				cursor: pointer;
+			}
+
+			.nav {
+				height: 40px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 10px 10px;
+				width: 100%;
+				border-bottom: 1px solid rgb(205, 203, 203);
+			}
+			.formInput {
+				display: flex;
+				justify-content: flex-start;
+				min-width: 1000px;
+				height: 100%;
+			}
+			.formInput .svg {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 0 20px;
+			}
+			.formInput input {
+				border: 1px solid rgb(223, 219, 215);
+				border-radius: 5px;
+				padding: 0 20px;
+				font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+					sans-serif;
+				color: black;
+			}
+			.selectedForm {
+				display: flex;
+				/* background-color: blue; */
+				width: 250px;
+				justify-content: space-evenly;
+			}
+			.selectedForm select {
+				border: none;
+				background-color: rgb(255, 255, 255);
+				font-weight: 700;
+				font-size: 16px;
+				/* padding: 0 10px; */
+				cursor: pointer;
+			}
+			.btn {
+				border-left: 1px solid gainsboro;
+				display: flex;
+				/* background-color: aqua; */
+				width: 200px;
+				justify-content: space-evenly;
+			}
+			.btn input {
+				border: none;
+				height: 40px;
+				width: 60px;
+				background-color: rgb(255, 255, 255);
+				font-size: 16px;
+				font-weight: 700;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="top">
+				<ul>
+					<li>Download app</li>
+					<li>Mulai Jualan</li>
+					<li>Jadi Mitra</li>
+					<li>BukaBantuan</li>
+				</ul>
+			</div>
+			<div class="nav">
+				<div class="formInput">
+					<div class="svg">
+						<img src="img/bukalapak-logo-primary.svg" alt="" height="20" />
+					</div>
+					<input
+						type="text"
+						name=""
+						id=""
+						size="40"
+						placeholder="Aku mau belanja..."
+					/>
+					<div class="selectedForm">
+						<select name="kategori" id="">
+							<option value="barang1">Kategori</option>
+							<option value="barang2">Barang2</option>
+						</select>
+						<select name="kategori" id="">
+							<option value="barang1">Produk Virtual</option>
+							<option value="barang2">Barang2</option>
+						</select>
+					</div>
+				</div>
+				<div class="btn">
+					<input type="button" value="Daftar" />
+					<input type="button" value="Login" />
+				</div>
+			</div>
+		</div>
+		<!-- <input type="text" size="60" /> -->
+	</body>
+</html>
